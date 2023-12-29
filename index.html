@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      html {
+        font-size: 16px;
+        line-height: 1.3;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgb(212, 224, 238);
+        font-family: sans-serif;
+      }
+      h3 {
+        font-size: 1em;
+        font-weight: 800;
+        line-height: 1.5;
+      }
+      p {
+        font-size: 0.75em;
+        color: rgb(146, 146, 146);
+        margin-top: 0;
+        margin-bottom: 1.5em;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        position: fixed;
+        bottom: 1em;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 210px;
+        background-color: white;
+        padding: 0.7em;
+        border-radius: 10px;
+        text-align: center;
+      }
+      .image {
+        /* width: 100%;  CAN'T DO THIS BECAUSE IT OVERFLOWS PADDING */
+        height: 200px; /* - HAD TO GUESS HEIGHT */
+        background: url("./images/image-qr-code.png") no-repeat center;
+        background-size: cover;
+        padding: 0.5em;
+        border-radius: 10px;
+      }
+      img {
+        /* object-fit: cover; */
+        object-fit: contain;
+        aspect-ratio: auto 1 / 1;
+        /* width: 100%;
+        height: auto; */
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="image"></div> -->
+      <img src="./images/image-qr-code.png" />
+      <h3>Improve your front-end skills by building projects</h3>
+      <p>
+        Scan the QR code to visit Frontend Mentor and take your coding skills to
+        the next level
+      </p>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
